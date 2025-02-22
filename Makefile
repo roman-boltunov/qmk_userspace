@@ -14,3 +14,6 @@ endif
 
 %:
 	+$(MAKE) -C $(QMK_FIRMWARE_ROOT) $(MAKECMDGOALS) QMK_USERSPACE=$(QMK_USERSPACE)
+
+compile-miryoku:
+	qmk compile -c -kb bastardkb/charybdis/4x6 -km miryoku-mine
